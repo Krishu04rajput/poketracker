@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PokéStream</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>PokéStream</h1>
+    <p class="subtitle">Watch All Pokémon Episodes in Multiple Languages</p>
+  </header>
+
+  <section id="download-app" class="download-section">
+    <h2>Download PokéStream Desktop App</h2>
+    <p>Get the PokéStream desktop app for your system:</p>
+    <div class="download-buttons">
+      <a href="/static/downloads/Pokestream.dmg" download class="btn btn-mac">Download for Mac</a>
+      <a href="/static/downloads/Pokestream.exe" download class="btn btn-win">Download for Windows</a>
+    </div>
+  </section>
+
+  <main>
+    <div class="selectors">
+      <label for="language-select">Language:</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="jp">Japanese</option>
+      </select>
+
+      <label for="season-select">Season:</label>
+      <select id="season-select"></select>
+
+      <label for="episode-select">Episode:</label>
+      <select id="episode-select"></select>
+    </div>
+
+    <div class="player-container">
+      <video id="player" controls poster="https://via.placeholder.com/960x540.png?text=Select+an+Episode" aria-label="Video player"></video>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 PokéStream. For educational use only.</p>
+  </footer>
+
+  <script>
+    function playEpisode(filename) {
+      const player = document.getElementById('player');
+      player.src = `/video/${filename}`;
+      player.play();
+      player.focus();
+    }
+  </script>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[
+  {
+    "season": 1,
+    "title": "Pokémon: Indigo League",
+    "episodes": [
+      {
+        "id": "s01e01",
+        "title": "I Choose You!",
+        "filename": "s01e01_en.mp4",
+        "language": "en",
+        "thumbnail": "https://via.placeholder.com/200x120.png?text=Ep+1"
+      }
+      /* more episodes */
+    ]
+  },
+  /* other seasons */
+  {
+    "season": 27,
+    "title": "Pokémon: Horizons - Season 2",
+    "episodes": [
+      {
+        "id": "s27e01",
+        "title": "Welcome to Naranja Academy!",
+        "filename": "s27e01_en.mp4",
+        "language": "en",
+        "thumbnail": "https://via.placeholder.com/200x120.png?text=S27E1"
+      },
+      {
+        "id": "s27e01_hi",
+        "title": "Welcome to Naranja Academy! (Hindi)",
+        "filename": "s27e01_hi.mp4",
+        "language": "hi",
+        "thumbnail": "https://via.placeholder.com/200x120.png?text=S27E1+Hindi"
+      },
+      {
+        "id": "s27e01_jp",
+        "title": "ウェルカム・トゥ・ナランハ・アカデミー！",
+        "filename": "s27e01_jp.mp4",
+        "language": "jp",
+        "thumbnail": "https://via.placeholder.com/200x120.png?text=S27E1+Japanese"
+      }
+      /* more episodes */
+    ]
+  }
+]
